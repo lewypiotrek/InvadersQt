@@ -2,8 +2,8 @@
 My version of game Invaders. Written in C++ with Qt framework.
 --------------------------------------------------------------
 Steering:
-Left arrow - move left| 
-right arrow - move right| 
+Left arrow - move left  
+right arrow - move right | 
 space - shot bullet
 --------------------------------------------------------------
 
