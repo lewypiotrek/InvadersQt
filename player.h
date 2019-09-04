@@ -18,6 +18,7 @@ public:
     void decreaseLife();
     int getLife();
     int life;
+    short shootMode;
     QMessageBox *msg;
 
 };

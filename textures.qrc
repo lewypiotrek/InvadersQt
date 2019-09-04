@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/texture">
+        <file>textures/Blue_laser.png</file>
+        <file>textures/ship.png</file>
+        <file>textures/invadres.png</file>
+        <file>textures/background.png</file>
+        <file>textures/red_laser.png</file>
+    </qresource>
+</RCC>

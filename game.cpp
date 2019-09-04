@@ -59,6 +59,8 @@ Game::Game()
        scoreboard->setPos(1150,680);
        scene->addItem(scoreboard);
 
+
+
 }
 
 Game::~Game()
@@ -93,8 +95,19 @@ void Game::updateStats()
 
 void Game::increasePoints()
 {
+    // increase score
     score++;
+
+    // get extra life if u make mod100 pointscore and show info to the screen
+    if(score%50 == 0)
+    {
+        this->player->increaseLife();
+        this->player->shootMode = 1;
+    }
+
+    // after 4 kills make random monster respawn
     int respawn = score%4;
+
     if(respawn == 0)
     {
         for(unsigned int i = 0; i < EnemysNum; i++)

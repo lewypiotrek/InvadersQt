@@ -12,6 +12,7 @@ Player::Player()
     setPixmap(QPixmap(":/texture/textures/ship.png"));
     setPos(600,600);
     life = 3;
+    shootMode = 0;
 }
 
 void Player::keyPressEvent(QKeyEvent * event)
@@ -26,9 +27,22 @@ void Player::keyPressEvent(QKeyEvent * event)
     }
     else if (event->key() == Qt::Key_Space)
     {
-        bullet = new Bullet();
-        bullet->setPos(x()+25,y());
-        scene()->addItem(bullet);
+        if(shootMode == 1)
+        {
+            bullet = new Bullet();
+            bullet->setPos(x(),y());
+            scene()->addItem(bullet);
+
+            bullet = new Bullet();
+            bullet->setPos(x()+28,y());
+            scene()->addItem(bullet);
+        }
+        else
+        {
+            bullet = new Bullet();
+            bullet->setPos(x()+25,y());
+            scene()->addItem(bullet);
+        }
     }
 }
 
