@@ -8,7 +8,8 @@ space - shot bullet
 
 --------------------------------------------------------------
 
-This is my first game with Qt framework. I based on existing game Invaders and would make similar game. 
+This is my first game with Qt framework. I was inspired by games Invaders and Chicken Invaders. 
+
 Project was made for study pass. 
 
 --------------------------------------------------------------
